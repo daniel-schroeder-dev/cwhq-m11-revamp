@@ -2,5 +2,5 @@
 
 import os
 
-os.system("cp ../m11-transcrypt/wizardlib/builtins.py ./")
+os.system("cp ../wizardlib.py ./")
 os.system(f"python -m transcrypt -b -m -n index.py")
