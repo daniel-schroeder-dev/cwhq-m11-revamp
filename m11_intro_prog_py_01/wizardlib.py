@@ -3,7 +3,7 @@ element_id = 0
 def get_next_id():
     global element_id
     element_id += 1
-    return element_id
+    return "element" + element_id
 
 
 def add_text(text, size=18):
