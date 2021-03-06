@@ -116,6 +116,8 @@ Weird, but cool, right? Happy hacking!
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
+I would really love some better CSS styling for these, so that would be a great first contribution! Adding documentation is also appreciated.
+
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
