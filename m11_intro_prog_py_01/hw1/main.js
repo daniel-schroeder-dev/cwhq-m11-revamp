@@ -1,11 +1,9 @@
 const missionControl = document.querySelector("#mission-control");
-const launchCodeInput = document.querySelector("#launch-code-input");
-const launchCodeError = document.querySelector("#launch-code-error");
-const launchButton = document.querySelector("#launch-button");
-const launchCodeInputLabel = document.querySelector("#launch-code-input-label");
-const countdown = document.querySelector("#countdown");
+const landCodeInput = document.querySelector("#land-code-input");
+const landCodeError = document.querySelector("#land-code-error");
+const landButton = document.querySelector("#land-button");
+const landCodeInputLabel = document.querySelector("#land-code-input-label");
 
-let countdownTime;
 let tickInterval;
 
 let fire;
@@ -14,7 +12,7 @@ setTimeout(() => {
     fire = document.querySelector("img[src='fire.png']");
 }, 500);
 
-function launchRocket() {
+function landRocket() {
     const rocket = document.querySelector("#element1");
     const ignition = document.querySelector("#ignition");
     ignition.play();
@@ -23,9 +21,11 @@ function launchRocket() {
     fire.style.animation = "3s cubic-bezier(0.5, 0, 1, 1) forwards takeoffFire";
 }
 
+let = countdownTime = 5;
+
 function tick() {
     if (!countdownTime) {
-        launchRocket();
+        landRocket();
         clearInterval(tickInterval);
         return;
     };
@@ -36,19 +36,16 @@ function tick() {
 missionControl.addEventListener("submit", e => {
     e.preventDefault();
 
-    const enteredLaunchCode = launchCodeInput.value;
-    const correctLaunchCode = launchCodeInput.dataset.launchCode;
+    const enteredlandCode = landCodeInput.value;
+    const correctlandCode = landCodeInput.dataset.landCode;
 
-    if (enteredLaunchCode === correctLaunchCode) {
-        launchCodeError.style.display = "none";
-        launchCodeInput.style.display = "none";
-        launchButton.style.display = "none";
-        launchCodeInputLabel.style.display = "none";
-        countdown.style.display = "block";
-        countdownTime = countdown.dataset.countdownTime;
-        countdown.textContent = countdownTime;
+    if (enteredlandCode === correctlandCode) {
+        landCodeError.style.display = "none";
+        landCodeInput.style.display = "none";
+        landButton.style.display = "none";
+        landCodeInputLabel.style.display = "none";
         tickInterval = setInterval(tick, 1000);
     } else {
-        launchCodeError.style.display = "block";
+        landCodeError.style.display = "block";
     }
 });
