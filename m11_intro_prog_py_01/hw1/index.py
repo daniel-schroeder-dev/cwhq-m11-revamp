@@ -1,8 +1,5 @@
 from wizardlib import *
 
-add_background("bg.jpg")
-
-
 def add_mission_control():
     document.querySelector("#mission-control").style.display = "flex";
 
@@ -18,7 +15,7 @@ def set_land_code(land_code):
     document.querySelector("#land-code-input").dataset.landCode = land_code
 
 
-
+add_background("bg.jpg")
 add_rocket()
 
 

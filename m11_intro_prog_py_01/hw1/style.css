@@ -50,12 +50,6 @@ button {
     display: none;
 }
 
-#countdown {
-    color: #00fa4d;
-    font-size: 64px;
-    display: none;
-}
-
 img[src='fire.png'] {
     display: none;
 }
