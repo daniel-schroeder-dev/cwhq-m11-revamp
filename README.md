@@ -34,22 +34,33 @@ Fire up an http server (note that this will block this terminal, so you'll need 
 python -m http.server
 ```
 
-You should be able to navigate to `http://localhost:8000/index.html` and see the output from `index.py`. Everytime you make a change in `index.py`, you need to run the `build.py` script. Change the shebang to point to your Python's venv interpreter. 
+You should be able to navigate to `http://localhost:8000/index.html` and see the output from `index.py`. 
+
+
+Everytime you make a change in `index.py`, you need to run the `build.py` script. Change into the directory of the course you want to work with:
+
+```bash
+cd m11_intro_prog_py_01/
+```
+
+Open the `build.py` file and change the shebang to point to your Python's venv interpreter.
 
 On my system, it's this:
 
 ```bash
-(.venv) ➜  wizardlib which python
-/home/daniel/Public/cwhq/src/wizardlib-transcrypt/.venv/bin/python
+(.venv) ➜  m11_intro_prog_py_01 which python
+/home/daniel/Public/cwhq/curriculum/m11-revamp/m11/.venv/bin/python
 ```
 
 So, my shebang is the same as the output above. Yours will be different, so you have to change this line:
 
 ```python
-#!/home/daniel/Public/cwhq/src/wizardlib-transcrypt/.venv/bin/python
+#!/home/daniel/Public/cwhq/curriculum/m11-revamp/m11/.venv/bin/python
 
 import os
-os.system("python -m transcrypt -b -m -n index.py")
+
+os.system("cp ../wizardlib.py ./")
+os.system(f"python -m transcrypt -b -m -n index.py")
 ```
 
 Then, make sure it has execute priviledges, and then you can run it everytime you change a Python file:
