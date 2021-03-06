@@ -3,4 +3,4 @@
 import os
 
 os.system("cp ../wizardlib.py ./")
-os.system(f"python -m transcrypt -b -m -n index.py")
+os.system("python -m transcrypt -b -m -n index.py")

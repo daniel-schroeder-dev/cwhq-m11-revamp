@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Rocket Land</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module">import * as index from './__target__/index.js'; window.index = index;</script>
+</head>
+
+<body>
+
+    <form id="mission-control">
+        <p id="landing-code-error">Incorrect Landing Code!</p>
+        <label id="landing-code-input-label" for="landing-code-input">Enter Landing Code</label>
+        <input id="landing-code-input" type="text" />
+        <button id="land-button">Land Rocket</button>
+    </form>
+
+    <audio id="ignition" src="ignition.mp3"></audio>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
