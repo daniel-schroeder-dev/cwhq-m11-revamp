@@ -28,10 +28,9 @@ Now, install the dependencies:
 pip install -r requirements.txt
 ```
 
-Enter the `wizardlib` directory and fire up an http server (note that this will block this terminal, so you'll need to open another tab and make sure to re-activate the virtual environment):
+Fire up an http server (note that this will block this terminal, so you'll need to open another tab and make sure to re-activate the virtual environment):
 
 ```bash
-cd wizardlib
 python -m http.server
 ```
 
@@ -73,7 +72,7 @@ If you want to test out the functions as you're working on them, work in `index.
 
 ```python
 # index.py
-from builtins import *
+from wizardlib import *
 
 text_element = add_text("Hello, world!")
 image_element = add_image("doggo.jpg")
@@ -90,7 +89,7 @@ Make sure to run the `build` commmand after each edit (or have `entr` do it for 
 ./build.py
 ```
 
-The `builtins.py` file is where you can work on builtins. You have access to the DOM, and can use JS libraries. For example:
+The `wizardlib.py` file is where you can work on wizardlib. You have access to the DOM, and can use JS libraries. For example:
 
 ```python
 def add_text(text):
