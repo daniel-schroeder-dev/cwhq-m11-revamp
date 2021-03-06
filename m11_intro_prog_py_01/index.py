@@ -9,7 +9,9 @@ def add_mission_control():
 
 def add_rocket():
     rocket = add_image("rocket.png", 100)
+    fire = add_image("fire.png", 100)
     position_element(rocket, 500, 500)
+    position_element(fire, 500, 542)
 
 
 def set_launch_code(launch_code):
@@ -18,9 +20,11 @@ def set_launch_code(launch_code):
 
 
 
+
 add_rocket()
 add_mission_control()
 set_launch_code("django")
+
 
 
 

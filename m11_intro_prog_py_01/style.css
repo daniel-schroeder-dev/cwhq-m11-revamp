@@ -49,3 +49,31 @@ button {
     color: red;
     display: none;
 }
+
+#countdown {
+    color: #00fa4d;
+    font-size: 64px;
+    display: none;
+}
+
+img[src='fire.png'] {
+    display: none;
+}
+
+@keyframes takeoff {
+    from {
+        top: 500px;
+    }
+    to {
+        top: -200px;
+    }
+}
+
+@keyframes takeoffFire {
+    from {
+        top: 542px;
+    }
+    to {
+        top: -158px;
+    }
+}
