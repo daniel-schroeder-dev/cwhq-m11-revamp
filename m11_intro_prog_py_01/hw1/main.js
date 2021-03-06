@@ -4,8 +4,6 @@ const landCodeError = document.querySelector("#land-code-error");
 const landButton = document.querySelector("#land-button");
 const landCodeInputLabel = document.querySelector("#land-code-input-label");
 
-let tickInterval;
-
 let fire;
 
 setTimeout(() => {
@@ -17,21 +15,10 @@ function landRocket() {
     const ignition = document.querySelector("#ignition");
     ignition.play();
     fire.style.display = "block";
-    rocket.style.animation = "3s cubic-bezier(0.5, 0, 1, 1) forwards takeoff";
-    fire.style.animation = "3s cubic-bezier(0.5, 0, 1, 1) forwards takeoffFire";
+    rocket.style.animation = "5s cubic-bezier(.25, .75, 1, 1) forwards touchdown";
+    fire.style.animation = "5s cubic-bezier(.25, .75, 1, 1) forwards touchdownFire";
 }
 
-let = countdownTime = 5;
-
-function tick() {
-    if (!countdownTime) {
-        landRocket();
-        clearInterval(tickInterval);
-        return;
-    };
-    countdownTime--;
-    countdown.textContent = countdownTime;
-}
 
 missionControl.addEventListener("submit", e => {
     e.preventDefault();
@@ -44,7 +31,7 @@ missionControl.addEventListener("submit", e => {
         landCodeInput.style.display = "none";
         landButton.style.display = "none";
         landCodeInputLabel.style.display = "none";
-        tickInterval = setInterval(tick, 1000);
+        landRocket();
     } else {
         landCodeError.style.display = "block";
     }

@@ -33,7 +33,7 @@ button {
     font-family: monospace;
 }
 
-#launch-code-input {
+#land-code-input {
     background: transparent;
     outline: none;
     border: none;
@@ -45,7 +45,7 @@ button {
     text-align: center;
 }
 
-#launch-code-error {
+#land-code-error {
     color: red;
     display: none;
 }
@@ -60,20 +60,20 @@ img[src='fire.png'] {
     display: none;
 }
 
-@keyframes takeoff {
+@keyframes touchdown {
     from {
-        top: 500px;
+        top: -300px;
     }
     to {
-        top: -200px;
+        top: 500px;
     }
 }
 
-@keyframes takeoffFire {
+@keyframes touchdownFire {
     from {
-        top: 542px;
+        top: -258px;
     }
     to {
-        top: -158px;
+        top: 542px;
     }
 }
