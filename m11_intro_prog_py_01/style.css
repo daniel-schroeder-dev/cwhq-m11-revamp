@@ -1,0 +1,51 @@
+body {
+    font-size: 18px;
+    font-family: monospace;
+}
+
+#mission-control {
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    background: black;
+    width: 400px;
+    height: 200px;
+}
+
+label {
+    color: #0cf00c;
+    font-size: 18px;
+}
+
+button {
+    margin-top: 20px;
+    border: 2px solid coral;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: darkred;
+    border-radius: 5px;
+    color: white;
+    font-family: monospace;
+}
+
+#launch-code-input {
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid red;
+    margin-bottom: 12px;
+    color: #08a3fe;
+    font-size: 18px;
+    padding-top: 12px;
+    text-align: center;
+}
+
+#launch-code-error {
+    color: red;
+    display: none;
+}
