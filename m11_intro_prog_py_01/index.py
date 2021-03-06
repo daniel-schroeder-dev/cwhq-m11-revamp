@@ -31,7 +31,7 @@ set_launch_code("django")
 
 
 # This is the bonus
-set_countdown_time(5)
+#set_countdown_time(5)
 
 
 

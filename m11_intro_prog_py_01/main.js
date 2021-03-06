@@ -16,6 +16,8 @@ setTimeout(() => {
 
 function launchRocket() {
     const rocket = document.querySelector("#element1");
+    const ignition = document.querySelector("#ignition");
+    ignition.play();
     fire.style.display = "block";
     rocket.style.animation = "3s cubic-bezier(0.5, 0, 1, 1) forwards takeoff";
     fire.style.animation = "3s cubic-bezier(0.5, 0, 1, 1) forwards takeoffFire";

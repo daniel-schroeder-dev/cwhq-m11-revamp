@@ -12,12 +12,14 @@
 <body>
 
     <form id="mission-control">
-        <p id="countdown" data-countdown-time></p>
+        <p id="countdown" data-countdown-time=3></p>
         <p id="launch-code-error">Incorrect Launch Code!</p>
         <label id="launch-code-input-label" for="launch-code-input">Enter Launch Code</label>
         <input id="launch-code-input" type="text" />
         <button id="launch-button">Launch Rocket</button>
     </form>
+
+    <audio id="ignition" src="ignition.mp3"></audio>
 
     <script src="main.js"></script>
 </body>
