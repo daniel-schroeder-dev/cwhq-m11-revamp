@@ -19,11 +19,19 @@ def set_launch_code(launch_code):
 
 
 
+def set_countdown_time(countdown_time):
+    document.querySelector("#countdown").dataset.countdownTime = countdown_time
 
 
+
+# This is the in-class assignment
 add_rocket()
 add_mission_control()
 set_launch_code("django")
+
+
+# This is the bonus
+set_countdown_time(5)
 
 
 

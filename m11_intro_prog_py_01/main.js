@@ -5,7 +5,7 @@ const launchButton = document.querySelector("#launch-button");
 const launchCodeInputLabel = document.querySelector("#launch-code-input-label");
 const countdown = document.querySelector("#countdown");
 
-let countdownTime = 3;
+let countdownTime;
 let tickInterval;
 
 let fire;
@@ -43,6 +43,7 @@ missionControl.addEventListener("submit", e => {
         launchButton.style.display = "none";
         launchCodeInputLabel.style.display = "none";
         countdown.style.display = "block";
+        countdownTime = countdown.dataset.countdownTime;
         countdown.textContent = countdownTime;
         tickInterval = setInterval(tick, 1000);
     } else {
